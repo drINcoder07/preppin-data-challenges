@@ -23,17 +23,22 @@ CREATE TABLE year2024.wk_2_non_flow_card (dates Date, flight_number VARCHAR(10),
 -- \copy year2024.wk_2_flow_card(dates, flight_number, from_location, to_location, class, price, flow_card, bags_checked, meal_type) FROM 'C:\<file location>\preppin-data-solutions\preppin-data-challenges\2024\Raw Files\PD 2024 Wk 1 Output Flow Card.csv' DELIMITER ',' CSV HEADER;
 -- \copy year2024.wk_2_non_flow_card(dates, flight_number, from_location, to_location, class, price, flow_card, bags_checked, meal_type) FROM 'C:\<file location>\preppin-data-solutions\preppin-data-challenges\2024\Raw Files\PD 2024 Wk 1 Output Non-Flow Card.csv' DELIMITER ',' CSV HEADER;
 
-CREATE TABLE year2024.q1 (month INTEGER, class VARCHAR(3),
-																											target SMALLINT);
+CREATE TABLE year2024.wk_3_q1 (month INTEGER, class VARCHAR(3),
+																																target INTEGER);
 
 
-CREATE TABLE year2024.q2 (month INTEGER, class VARCHAR(3),
-																											target SMALLINT);
+CREATE TABLE year2024.wk_3_q2 (month INTEGER, class VARCHAR(3),
+																																target INTEGER);
 
 
-CREATE TABLE year2024.q3 (month INTEGER, class VARCHAR(3),
-																											target SMALLINT);
+CREATE TABLE year2024.wk_3_q3 (month INTEGER, class VARCHAR(3),
+																																target INTEGER);
 
 
-CREATE TABLE year2024.q4 (month INTEGER, class VARCHAR(3),
-																											target SMALLINT);
+CREATE TABLE year2024.wk_3_q4 (month INTEGER, class VARCHAR(3),
+																																target INTEGER);
+
+-- \copy year2024.wk_3_q1(month, class, target) FROM 'C:\Users\drin\Desktop\PROJECTS\preppin-data-solutions\preppin-data-challenges\2024\Raw Files\PD 2024 Wk 3 Input Q1.csv' DELIMITER ',' CSV HEADER;
+-- \copy year2024.wk_3_q2(month, class, target) FROM 'C:\Users\drin\Desktop\PROJECTS\preppin-data-solutions\preppin-data-challenges\2024\Raw Files\PD 2024 Wk 3 Input Q2.csv' DELIMITER ',' CSV HEADER;
+-- \copy year2024.wk_3_q3(month, class, target) FROM 'C:\Users\drin\Desktop\PROJECTS\preppin-data-solutions\preppin-data-challenges\2024\Raw Files\PD 2024 Wk 3 Input Q3.csv' DELIMITER ',' CSV HEADER;
+-- \copy year2024.wk_3_q4(month, class, target) FROM 'C:\Users\drin\Desktop\PROJECTS\preppin-data-solutions\preppin-data-challenges\2024\Raw Files\PD 2024 Wk 3 Input Q4.csv' DELIMITER ',' CSV HEADER;
