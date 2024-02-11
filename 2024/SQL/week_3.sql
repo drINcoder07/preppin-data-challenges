@@ -118,7 +118,6 @@ FROM targets;
 
 -- Merging sales, targets, and finding the difference to target
 
-CREATE VIEW merged_targets_and_sales AS
 SELECT (s.price - t.target) AS "Difference to Target",
        s.month AS "Date",
        s.price AS "Price",
