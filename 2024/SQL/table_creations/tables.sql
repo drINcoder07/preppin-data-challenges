@@ -22,6 +22,8 @@ CREATE TABLE year2024.wk_2_non_flow_card (dates Date, flight_number VARCHAR(10),
 -- \copy year2024.wk_1(flight_details, flow_card, bags_checked, meal_type) FROM 'C:<file location>\PD 2024 Wk 1 Input.csv' DELIMITER ',' CSV HEADER;
 -- \copy year2024.wk_2_flow_card(dates, flight_number, from_location, to_location, class, price, flow_card, bags_checked, meal_type) FROM 'C:\<file location>\preppin-data-solutions\preppin-data-challenges\2024\Raw Files\PD 2024 Wk 1 Output Flow Card.csv' DELIMITER ',' CSV HEADER;
 -- \copy year2024.wk_2_non_flow_card(dates, flight_number, from_location, to_location, class, price, flow_card, bags_checked, meal_type) FROM 'C:\<file location>\preppin-data-solutions\preppin-data-challenges\2024\Raw Files\PD 2024 Wk 1 Output Non-Flow Card.csv' DELIMITER ',' CSV HEADER;
+--
+-- WEEK 3
 
 CREATE TABLE year2024.wk_3_q1 (month INTEGER, class VARCHAR(3),
 																																target INTEGER);
@@ -42,3 +44,22 @@ CREATE TABLE year2024.wk_3_q4 (month INTEGER, class VARCHAR(3),
 -- \copy year2024.wk_3_q2(month, class, target) FROM 'C:\Users\drin\Desktop\PROJECTS\preppin-data-solutions\preppin-data-challenges\2024\Raw Files\PD 2024 Wk 3 Input Q2.csv' DELIMITER ',' CSV HEADER;
 -- \copy year2024.wk_3_q3(month, class, target) FROM 'C:\Users\drin\Desktop\PROJECTS\preppin-data-solutions\preppin-data-challenges\2024\Raw Files\PD 2024 Wk 3 Input Q3.csv' DELIMITER ',' CSV HEADER;
 -- \copy year2024.wk_3_q4(month, class, target) FROM 'C:\Users\drin\Desktop\PROJECTS\preppin-data-solutions\preppin-data-challenges\2024\Raw Files\PD 2024 Wk 3 Input Q4.csv' DELIMITER ',' CSV HEADER;
+--
+-- WEEK 4
+
+CREATE TABLE year2024.wk_4_flow_card(customer_ID SMALLINT, seat SMALLINT, row SMALLINT, class VARCHAR(2));
+
+
+CREATE TABLE year2024.wk_4_non_flow_card(customer_ID SMALLINT, seat SMALLINT, row SMALLINT, class VARCHAR(2));
+
+
+CREATE TABLE year2024.wk_4_non_flow_card_2(customer_ID SMALLINT, seat SMALLINT, row SMALLINT, class VARCHAR(2));
+
+
+CREATE TABLE year2024.wk_4_seat_plan(class VARCHAR(2),
+																																						seat SMALLINT, row SMALLINT);
+
+-- \copy year2024.wk_4_flow_card(customer_ID, seat, row, class) FROM 'C:\Users\drin\Desktop\PROJECTS\preppin-data-solutions\preppin-data-challenges\2024\Raw Files\PD 2024 Wk 4 Input Flow Card.csv' DELIMITER ',' CSV HEADER;
+-- \copy year2024.wk_4_non_flow_card(customer_ID, seat, row, class) FROM 'C:\Users\drin\Desktop\PROJECTS\preppin-data-solutions\preppin-data-challenges\2024\Raw Files\PD 2024 Wk 4 Input Non-Flow Card.csv' DELIMITER ',' CSV HEADER;
+-- \copy year2024.wk_4_non_flow_card_2(customer_ID, seat, row, class) FROM 'C:\Users\drin\Desktop\PROJECTS\preppin-data-solutions\preppin-data-challenges\2024\Raw Files\PD 2024 Wk 4 Input Non-Flow Card 2.csv' DELIMITER ',' CSV HEADER;
+-- \copy year2024.wk_4_seat_plan(class, seat, row) FROM 'C:\Users\drin\Desktop\PROJECTS\preppin-data-solutions\preppin-data-challenges\2024\Raw Files\PD 2024 Wk 4 Input Seat Plan.csv' DELIMITER ',' CSV HEADER;
