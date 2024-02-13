@@ -84,3 +84,8 @@ CREATE TABLE year2024.wk_5_customers (customer_id VARCHAR(30),
 -- \copy year2024.wk_5_flights(date, flight_number, from_location, to_location) FROM 'C:\Users\drin\Desktop\PROJECTS\preppin-data-solutions\preppin-data-challenges\2024\Raw Files\Prep Air 2024 Flights.csv' DELIMITER ',' CSV HEADER;
 -- \copy year2024.wk_5_ticket_sales(date, flight_number, customer_id, ticket_price) FROM 'C:\Users\drin\Desktop\PROJECTS\preppin-data-solutions\preppin-data-challenges\2024\Raw Files\Prep Air Ticket Sales.csv' DELIMITER ',' CSV HEADER;
 -- \copy year2024.wk_5_customers(customer_id, last_date_flown, first_name, last_name, email, gender) FROM 'C:\Users\drin\Desktop\PROJECTS\preppin-data-solutions\preppin-data-challenges\2024\Raw Files\Prep Air Customers.csv' DELIMITER ',' CSV HEADER;
+
+CREATE TABLE year2024.wk_6_salaries (staff_id VARCHAR(10),
+																																						month_1 DECIMAL, month_2 DECIMAL, month_3 DECIMAL, month_4 DECIMAL, month_5 DECIMAL, month_6 DECIMAL, month_7 DECIMAL, month_8 DECIMAL, month_9 DECIMAL, month_10 DECIMAL, month_11 DECIMAL, month_12 DECIMAL);
+
+-- \copy year2024.wk_6_salaries(staff_id, month_1,month_2,month_3,month_4,month_5,month_6,month_7,month_8,month_9,month_10,month_11,month_12 ) FROM 'C:\Users\drin\Desktop\PROJECTS\preppin-data-solutions\preppin-data-challenges\2024\Raw Files\PD 2024 Wk 6 Input.csv' DELIMITER ',' CSV HEADER;
