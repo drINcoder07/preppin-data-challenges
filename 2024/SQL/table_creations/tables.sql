@@ -63,3 +63,24 @@ CREATE TABLE year2024.wk_4_seat_plan(class VARCHAR(2),
 -- \copy year2024.wk_4_non_flow_card(customer_ID, seat, row, class) FROM 'C:\Users\drin\Desktop\PROJECTS\preppin-data-solutions\preppin-data-challenges\2024\Raw Files\PD 2024 Wk 4 Input Non-Flow Card.csv' DELIMITER ',' CSV HEADER;
 -- \copy year2024.wk_4_non_flow_card_2(customer_ID, seat, row, class) FROM 'C:\Users\drin\Desktop\PROJECTS\preppin-data-solutions\preppin-data-challenges\2024\Raw Files\PD 2024 Wk 4 Input Non-Flow Card 2.csv' DELIMITER ',' CSV HEADER;
 -- \copy year2024.wk_4_seat_plan(class, seat, row) FROM 'C:\Users\drin\Desktop\PROJECTS\preppin-data-solutions\preppin-data-challenges\2024\Raw Files\PD 2024 Wk 4 Input Seat Plan.csv' DELIMITER ',' CSV HEADER;
+ -- WEEK 5
+
+CREATE TABLE year2024.wk_5_flights (date DATE, flight_number VARCHAR(5),
+																																					from_location VARCHAR(15),
+																																					to_location VARCHAR(15));
+
+
+CREATE TABLE year2024.wk_5_ticket_sales (date DATE, flight_number VARCHAR(5),
+																																										customer_id VARCHAR(30),
+																																										ticket_price DECIMAL);
+
+
+CREATE TABLE year2024.wk_5_customers (customer_id VARCHAR(30),
+																																							last_date_flown DATE, first_name VARCHAR(20),
+																																							last_name VARCHAR(20),
+																																							email VARCHAR(50),
+																																							gender VARCHAR(20));
+
+-- \copy year2024.wk_5_flights(date, flight_number, from_location, to_location) FROM 'C:\Users\drin\Desktop\PROJECTS\preppin-data-solutions\preppin-data-challenges\2024\Raw Files\Prep Air 2024 Flights.csv' DELIMITER ',' CSV HEADER;
+-- \copy year2024.wk_5_ticket_sales(date, flight_number, customer_id, ticket_price) FROM 'C:\Users\drin\Desktop\PROJECTS\preppin-data-solutions\preppin-data-challenges\2024\Raw Files\Prep Air Ticket Sales.csv' DELIMITER ',' CSV HEADER;
+-- \copy year2024.wk_5_customers(customer_id, last_date_flown, first_name, last_name, email, gender) FROM 'C:\Users\drin\Desktop\PROJECTS\preppin-data-solutions\preppin-data-challenges\2024\Raw Files\Prep Air Customers.csv' DELIMITER ',' CSV HEADER;
