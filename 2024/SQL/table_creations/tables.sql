@@ -89,3 +89,13 @@ CREATE TABLE year2024.wk_6_salaries (staff_id VARCHAR(10),
 																																						month_1 DECIMAL, month_2 DECIMAL, month_3 DECIMAL, month_4 DECIMAL, month_5 DECIMAL, month_6 DECIMAL, month_7 DECIMAL, month_8 DECIMAL, month_9 DECIMAL, month_10 DECIMAL, month_11 DECIMAL, month_12 DECIMAL);
 
 -- \copy year2024.wk_6_salaries(staff_id, month_1,month_2,month_3,month_4,month_5,month_6,month_7,month_8,month_9,month_10,month_11,month_12 ) FROM 'C:\Users\drin\Desktop\PROJECTS\preppin-data-solutions\preppin-data-challenges\2024\Raw Files\PD 2024 Wk 6 Input.csv' DELIMITER ',' CSV HEADER;
+
+CREATE TABLE year2024.wk_7_couples (couple VARCHAR(30),
+																																					relationship_start date);
+
+-- \copy year2024.wk_7_couples(couple, relationship_start) FROM 'C:\Users\drin\Desktop\PROJECTS\preppin-data-solutions\preppin-data-challenges\2024\Raw Files\Valentine PD - Couples.csv' DELIMITER ',' CSV HEADER;
+
+CREATE TABLE year2024.wk_7_gifts ( year VARCHAR(5),
+																																			gift VARCHAR(20));
+
+-- \copy year2024.wk_7_gifts(year, gift) FROM 'C:\Users\drin\Desktop\PROJECTS\preppin-data-solutions\preppin-data-challenges\2024\Raw Files\Valentine PD - Gifts.csv' DELIMITER ',' CSV HEADER;
