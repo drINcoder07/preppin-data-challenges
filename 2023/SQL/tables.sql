@@ -19,3 +19,75 @@ CREATE TABLE year2023.wk_3_targets (online_or_in_person VARCHAR(20),
                                                         q1 INTEGER, q2 INTEGER, q3 INTEGER, q4 INTEGER);
 
 -- \copy year2023.wk_3_targets(online_or_in_person, q1, q2, q3, q4) FROM 'C:\Users\drin\Desktop\PROJECTS\preppin-data-solutions\preppin-data-challenges\2023\Raw Files\Targets.csv' DELIMITER ',' CSV HEADER;
+
+CREATE TABLE year2023.wk_4_January (id VARCHAR(6),
+                                       joining_day INTEGER, demographic VARCHAR(30),
+                                                                        value VARCHAR(20));
+
+
+CREATE TABLE year2023.wk_4_February (id VARCHAR(6),
+                                        joining_day INTEGER, demographic VARCHAR(30),
+                                                                         value VARCHAR(20));
+
+
+CREATE TABLE year2023.wk_4_March (id VARCHAR(6),
+                                     joining_day INTEGER, demographic VARCHAR(30),
+                                                                      value VARCHAR(20));
+
+
+CREATE TABLE year2023.wk_4_April (id VARCHAR(6),
+                                     joining_day INTEGER, demographic VARCHAR(30),
+                                                                      value VARCHAR(20));
+
+
+CREATE TABLE year2023.wk_4_May (id VARCHAR(6),
+                                   joining_day INTEGER, demographic VARCHAR(30),
+                                                                    value VARCHAR(20));
+
+
+CREATE TABLE year2023.wk_4_June (id VARCHAR(6),
+                                    joining_day INTEGER, demographic VARCHAR(30),
+                                                                     value VARCHAR(20));
+
+
+CREATE TABLE year2023.wk_4_July (id VARCHAR(6),
+                                    joining_day INTEGER, demographic VARCHAR(30),
+                                                                     value VARCHAR(20));
+
+
+CREATE TABLE year2023.wk_4_August (id VARCHAR(6),
+                                      joining_day INTEGER, demographic VARCHAR(30),
+                                                                       value VARCHAR(20));
+
+
+CREATE TABLE year2023.wk_4_September (id VARCHAR(6),
+                                         joining_day INTEGER, demographic VARCHAR(30),
+                                                                          value VARCHAR(20));
+
+
+CREATE TABLE year2023.wk_4_October (id VARCHAR(6),
+                                       joining_day INTEGER, demographic VARCHAR(30),
+                                                                        value VARCHAR(20));
+
+
+CREATE TABLE year2023.wk_4_November (id VARCHAR(6),
+                                        joining_day INTEGER, demographic VARCHAR(30),
+                                                                         value VARCHAR(20));
+
+
+CREATE TABLE year2023.wk_4_December (id VARCHAR(6),
+                                        joining_day INTEGER, demographic VARCHAR(30),
+                                                                         value VARCHAR(20));
+
+-- \copy year2023.wk_4_January (id, joining_day, demographic, value) FROM 'C:\Users\drin\Desktop\PROJECTS\preppin-data-solutions\preppin-data-challenges\2023\Raw Files\New Customers January.csv' DELIMITER ',' CSV HEADER;
+-- \copy year2023.wk_4_February (id, joining_day, demographic, value) FROM 'C:\Users\drin\Desktop\PROJECTS\preppin-data-solutions\preppin-data-challenges\2023\Raw Files\New Customers January.csv' DELIMITER ',' CSV HEADER;
+-- \copy year2023.wk_4_March (id, joining_day, demographic, value) FROM 'C:\Users\drin\Desktop\PROJECTS\preppin-data-solutions\preppin-data-challenges\2023\Raw Files\New Customers January.csv' DELIMITER ',' CSV HEADER;
+-- \copy year2023.wk_4_April (id, joining_day, demographic, value) FROM 'C:\Users\drin\Desktop\PROJECTS\preppin-data-solutions\preppin-data-challenges\2023\Raw Files\New Customers January.csv' DELIMITER ',' CSV HEADER;
+-- \copy year2023.wk_4_May (id, joining_day, demographic, value) FROM 'C:\Users\drin\Desktop\PROJECTS\preppin-data-solutions\preppin-data-challenges\2023\Raw Files\New Customers January.csv' DELIMITER ',' CSV HEADER;
+-- \copy year2023.wk_4_June (id, joining_day, demographic, value) FROM 'C:\Users\drin\Desktop\PROJECTS\preppin-data-solutions\preppin-data-challenges\2023\Raw Files\New Customers January.csv' DELIMITER ',' CSV HEADER;
+-- \copy year2023.wk_4_July (id, joining_day, demographic, value) FROM 'C:\Users\drin\Desktop\PROJECTS\preppin-data-solutions\preppin-data-challenges\2023\Raw Files\New Customers January.csv' DELIMITER ',' CSV HEADER;
+-- \copy year2023.wk_4_August (id, joining_day, demographic, value) FROM 'C:\Users\drin\Desktop\PROJECTS\preppin-data-solutions\preppin-data-challenges\2023\Raw Files\New Customers January.csv' DELIMITER ',' CSV HEADER;
+-- \copy year2023.wk_4_September (id, joining_day, demographic, value) FROM 'C:\Users\drin\Desktop\PROJECTS\preppin-data-solutions\preppin-data-challenges\2023\Raw Files\New Customers January.csv' DELIMITER ',' CSV HEADER;
+-- \copy year2023.wk_4_October (id, joining_day, demographic, value) FROM 'C:\Users\drin\Desktop\PROJECTS\preppin-data-solutions\preppin-data-challenges\2023\Raw Files\New Customers January.csv' DELIMITER ',' CSV HEADER;
+-- \copy year2023.wk_4_November (id, joining_day, demographic, value) FROM 'C:\Users\drin\Desktop\PROJECTS\preppin-data-solutions\preppin-data-challenges\2023\Raw Files\New Customers January.csv' DELIMITER ',' CSV HEADER;
+-- \copy year2023.wk_4_December (id, joining_day, demographic, value) FROM 'C:\Users\drin\Desktop\PROJECTS\preppin-data-solutions\preppin-data-challenges\2023\Raw Files\New Customers January.csv' DELIMITER ',' CSV HEADER;
