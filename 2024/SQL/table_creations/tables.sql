@@ -95,7 +95,27 @@ CREATE TABLE year2024.wk_7_couples (couple VARCHAR(30),
 
 -- \copy year2024.wk_7_couples(couple, relationship_start) FROM 'C:\Users\drin\Desktop\PROJECTS\preppin-data-solutions\preppin-data-challenges\2024\Raw Files\Valentine PD - Couples.csv' DELIMITER ',' CSV HEADER;
 
-CREATE TABLE year2024.wk_7_gifts ( year VARCHAR(5),
+CREATE TABLE year2024.wk_7_gifts (year VARCHAR(5),
 																																			gift VARCHAR(20));
 
 -- \copy year2024.wk_7_gifts(year, gift) FROM 'C:\Users\drin\Desktop\PROJECTS\preppin-data-solutions\preppin-data-challenges\2024\Raw Files\Valentine PD - Gifts.csv' DELIMITER ',' CSV HEADER;
+
+CREATE TABLE year2024.wk_8_updated_customers (customer_id VARCHAR(30),
+																																															first_name VARCHAR(20),
+																																															last_name VARCHAR(20),
+																																															email VARCHAR(50),
+																																															gender VARCHAR(20),
+																																															first_flight DATE, last_date_flown DATE, number_of_flights INTEGER);
+
+-- \copy year2024.wk_8_updated_customers(customer_id,  first_name, last_name, email, gender, first_flight, last_date_flown, number_of_flights) FROM 'C:\Users\drin\Desktop\PROJECTS\preppin-data-solutions\preppin-data-challenges\2024\Raw Files\Prep Air Updated Customers.csv' DELIMITER ',' CSV HEADER;
+
+CREATE TABLE year2024.wk_8_costings (benefit VARCHAR(50),
+																																						cost VARCHAR(20));
+
+-- \copy year2024.wk_8_costings(benefit, cost) FROM 'C:\Users\drin\Desktop\PROJECTS\preppin-data-solutions\preppin-data-challenges\2024\Raw Files\Prep Air Costings.csv' DELIMITER ',' CSV HEADER;
+
+CREATE TABLE year2024.wk_8_loyalty_schemes (tier_grouping INTEGER, number_of_flights VARCHAR(10),
+																																													tier VARCHAR(10),
+																																													benefits VARCHAR(100));
+
+-- \copy year2024.wk_8_loyalty_schemes(tier_grouping, number_of_flights, tier, benefits) FROM 'C:\Users\drin\Desktop\PROJECTS\preppin-data-solutions\preppin-data-challenges\2024\Raw Files\Prep Air Loyalty Schemes.csv' DELIMITER ',' CSV HEADER;
