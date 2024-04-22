@@ -120,15 +120,33 @@ CREATE TABLE year2024.wk_8_loyalty_schemes (tier_grouping INTEGER, number_of_fli
 
 -- \copy year2024.wk_8_loyalty_schemes(tier_grouping, number_of_flights, tier, benefits) FROM 'C:\Users\drin\Desktop\PROJECTS\preppin-data-solutions\preppin-data-challenges\2024\Raw Files\Prep Air Loyalty Schemes.csv' DELIMITER ',' CSV HEADER;
 
-CREATE TABLE year2024.wk_9_customer_actions ( flight_number VARCHAR(10),
+CREATE TABLE year2024.wk_9_customer_actions (flight_number VARCHAR(10),
 																																														flight_date DATE, customer_ID VARCHAR(20),
 																																														action VARCHAR(15), date DATE, class VARCHAR(15),
 																																														row INTEGER, seat INTEGER);
 
 -- \copy year2024.wk_9_customer_actions(flight_number, flight_date, customer_ID, action, date, class, row, seat) FROM 'C:\Users\drin\Desktop\PROJECTS\preppin-data-solutions\preppin-data-challenges\2024\Raw Files\PD 2024 Week 9 Input.xlsx - Customer Actions.csv' DELIMITER ',' CSV HEADER;
 
-CREATE TABLE year2024.wk_9_flight_details ( flight_number VARCHAR(10),
+CREATE TABLE year2024.wk_9_flight_details (flight_number VARCHAR(10),
 																																												flight_date DATE, class VARCHAR(15),
 																																												capacity INTEGER);
 
--- \copy year2024.wk_9_flight_details(flight_number, flight_date, class, capacity) FROM 'C:\Users\drin\Desktop\PROJECTS\preppin-data-solutions\preppin-data-challenges\2024\Raw Files\PD 2024 Week 9 Input.xlsx - Flight Details.csv' DELIMITER ',' CSV HEADER;
+-- \copy year2024.wk_9_flight_details (flight_number, flight_date, class, capacity) FROM 'C:\Users\drin\Desktop\PROJECTS\preppin-data-solutions\preppin-data-challenges\2024\Raw Files\PD 2024 Week 9 Input.xlsx - Flight Details.csv' DELIMITER ',' CSV HEADER;
+
+CREATE TABLE year2024.wk_10_transactions (transaction_date DATE, transaction_number VARCHAR(15),
+																																											product_id VARCHAR(30),
+																																											cash_or_card INTEGER, loyalty_number VARCHAR(10),
+																																											sales_before_discount DECIMAL); -- \copy year2024.wk_10_transactions(transaction_date, transaction_number, product_id, cash_or_card, loyalty_number, sales_before_discount) FROM 'C:\Users\drin\Desktop\PROJECTS\preppin-data-solutions\preppin-data-challenges\2024\Raw Files\2024W10 Input.xlsx - Transaction Data.csv' DELIMITER ',' CSV HEADER;
+
+
+CREATE TABLE year2024.wk_10_loyalty (loyalty_number VARCHAR(10),
+																																						customer_name VARCHAR(50),
+																																						loyalty_tier VARCHAR(15),
+																																						loyalty_discount VARCHAR(5)); -- \copy year2024.wk_10_loyalty(loyalty_number, customer_name, loyalty_tier, loyalty_discount) FROM 'C:\Users\drin\Desktop\PROJECTS\preppin-data-solutions\preppin-data-challenges\2024\Raw Files\2024W10 Input.xlsx - Loyalty Table.csv' DELIMITER ',' CSV HEADER;
+
+
+CREATE TABLE year2024.wk_10_product (product_type VARCHAR(10),
+																																						product_scent VARCHAR(20),
+																																						pack_size VARCHAR(5),
+																																						product_size VARCHAR(5),
+																																						unit_cost DECIMAL, selling_price DECIMAL); -- \copy year2024.wk_10_product(product_type, product_scent, pack_size, product_size, unit_cost, selling_price) FROM 'C:\Users\drin\Desktop\PROJECTS\preppin-data-solutions\preppin-data-challenges\2024\Raw Files\2024W10 Input.xlsx - Product Table.csv' DELIMITER ',' CSV HEADER;
