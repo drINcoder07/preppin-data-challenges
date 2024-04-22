@@ -119,3 +119,16 @@ CREATE TABLE year2024.wk_8_loyalty_schemes (tier_grouping INTEGER, number_of_fli
 																																													benefits VARCHAR(100));
 
 -- \copy year2024.wk_8_loyalty_schemes(tier_grouping, number_of_flights, tier, benefits) FROM 'C:\Users\drin\Desktop\PROJECTS\preppin-data-solutions\preppin-data-challenges\2024\Raw Files\Prep Air Loyalty Schemes.csv' DELIMITER ',' CSV HEADER;
+
+CREATE TABLE year2024.wk_9_customer_actions ( flight_number VARCHAR(10),
+																																														flight_date DATE, customer_ID VARCHAR(20),
+																																														action VARCHAR(15), date DATE, class VARCHAR(15),
+																																														row INTEGER, seat INTEGER);
+
+-- \copy year2024.wk_9_customer_actions(flight_number, flight_date, customer_ID, action, date, class, row, seat) FROM 'C:\Users\drin\Desktop\PROJECTS\preppin-data-solutions\preppin-data-challenges\2024\Raw Files\PD 2024 Week 9 Input.xlsx - Customer Actions.csv' DELIMITER ',' CSV HEADER;
+
+CREATE TABLE year2024.wk_9_flight_details ( flight_number VARCHAR(10),
+																																												flight_date DATE, class VARCHAR(15),
+																																												capacity INTEGER);
+
+-- \copy year2024.wk_9_flight_details(flight_number, flight_date, class, capacity) FROM 'C:\Users\drin\Desktop\PROJECTS\preppin-data-solutions\preppin-data-challenges\2024\Raw Files\PD 2024 Week 9 Input.xlsx - Flight Details.csv' DELIMITER ',' CSV HEADER;
