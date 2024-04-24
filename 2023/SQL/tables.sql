@@ -79,6 +79,10 @@ CREATE TABLE year2023.wk_4_December (id VARCHAR(6),
                                         joining_day INTEGER, demographic VARCHAR(30),
                                                                          value VARCHAR(20));
 
+
+CREATE TABLE year2023.wk_6_customer_ratings ( customer_id VARCHAR(10),
+                                                          mobile_app_ease_of_use INTEGER, mobile_app_ease_of_access INTEGER, mobile_app_navigation INTEGER, mobile_app_likelihood_to_recommend INTEGER, mobile_app_overall_rating INTEGER, online_interface_ease_of_use INTEGER, online_interface_ease_of_access INTEGER, online_interface_navigation INTEGER, online_interface_likelihood_to_recommend INTEGER, online_interface_overall_rating INTEGER);
+
 -- \copy year2023.wk_4_January (id, joining_day, demographic, value) FROM 'C:\Users\drin\Desktop\PROJECTS\preppin-data-solutions\preppin-data-challenges\2023\Raw Files\New Customers January.csv' DELIMITER ',' CSV HEADER;
 -- \copy year2023.wk_4_February (id, joining_day, demographic, value) FROM 'C:\Users\drin\Desktop\PROJECTS\preppin-data-solutions\preppin-data-challenges\2023\Raw Files\New Customers February.csv' DELIMITER ',' CSV HEADER;
 -- \copy year2023.wk_4_March (id, joining_day, demographic, value) FROM 'C:\Users\drin\Desktop\PROJECTS\preppin-data-solutions\preppin-data-challenges\2023\Raw Files\New Customers March.csv' DELIMITER ',' CSV HEADER;
@@ -91,3 +95,4 @@ CREATE TABLE year2023.wk_4_December (id VARCHAR(6),
 -- \copy year2023.wk_4_October (id, joining_day, demographic, value) FROM 'C:\Users\drin\Desktop\PROJECTS\preppin-data-solutions\preppin-data-challenges\2023\Raw Files\New Customers October.csv' DELIMITER ',' CSV HEADER;
 -- \copy year2023.wk_4_November (id, joining_day, demographic, value) FROM 'C:\Users\drin\Desktop\PROJECTS\preppin-data-solutions\preppin-data-challenges\2023\Raw Files\New Customers November.csv' DELIMITER ',' CSV HEADER;
 -- \copy year2023.wk_4_December (id, joining_day, demographic, value) FROM 'C:\Users\drin\Desktop\PROJECTS\preppin-data-solutions\preppin-data-challenges\2023\Raw Files\New Customers December.csv' DELIMITER ',' CSV HEADER;
+-- \copy year2023.wk_6_customer_ratings (customer_id, mobile_app_ease_of_use, mobile_app_ease_of_access,mobile_app_navigation,mobile_app_likelihood_to_recommend,mobile_app_overall_rating,online_interface_ease_of_use, online_interface_ease_of_access,online_interface_navigation,online_interface_likelihood_to_recommend,online_interface_overall_rating) FROM 'C:\Users\drin\Desktop\PROJECTS\preppin-data-solutions\preppin-data-challenges\2023\Raw Files\DSB Customer Survery.csv' DELIMITER ',' CSV HEADER;
