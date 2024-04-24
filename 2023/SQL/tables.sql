@@ -80,8 +80,8 @@ CREATE TABLE year2023.wk_4_December (id VARCHAR(6),
                                                                          value VARCHAR(20));
 
 
-CREATE TABLE year2023.wk_6_customer_ratings ( customer_id VARCHAR(10),
-                                                          mobile_app_ease_of_use INTEGER, mobile_app_ease_of_access INTEGER, mobile_app_navigation INTEGER, mobile_app_likelihood_to_recommend INTEGER, mobile_app_overall_rating INTEGER, online_interface_ease_of_use INTEGER, online_interface_ease_of_access INTEGER, online_interface_navigation INTEGER, online_interface_likelihood_to_recommend INTEGER, online_interface_overall_rating INTEGER);
+CREATE TABLE year2023.wk_6_customer_ratings (customer_id VARCHAR(10),
+                                                         mobile_app_ease_of_use INTEGER, mobile_app_ease_of_access INTEGER, mobile_app_navigation INTEGER, mobile_app_likelihood_to_recommend INTEGER, mobile_app_overall_rating INTEGER, online_interface_ease_of_use INTEGER, online_interface_ease_of_access INTEGER, online_interface_navigation INTEGER, online_interface_likelihood_to_recommend INTEGER, online_interface_overall_rating INTEGER);
 
 -- \copy year2023.wk_4_January (id, joining_day, demographic, value) FROM 'C:\Users\drin\Desktop\PROJECTS\preppin-data-solutions\preppin-data-challenges\2023\Raw Files\New Customers January.csv' DELIMITER ',' CSV HEADER;
 -- \copy year2023.wk_4_February (id, joining_day, demographic, value) FROM 'C:\Users\drin\Desktop\PROJECTS\preppin-data-solutions\preppin-data-challenges\2023\Raw Files\New Customers February.csv' DELIMITER ',' CSV HEADER;
@@ -96,3 +96,28 @@ CREATE TABLE year2023.wk_6_customer_ratings ( customer_id VARCHAR(10),
 -- \copy year2023.wk_4_November (id, joining_day, demographic, value) FROM 'C:\Users\drin\Desktop\PROJECTS\preppin-data-solutions\preppin-data-challenges\2023\Raw Files\New Customers November.csv' DELIMITER ',' CSV HEADER;
 -- \copy year2023.wk_4_December (id, joining_day, demographic, value) FROM 'C:\Users\drin\Desktop\PROJECTS\preppin-data-solutions\preppin-data-challenges\2023\Raw Files\New Customers December.csv' DELIMITER ',' CSV HEADER;
 -- \copy year2023.wk_6_customer_ratings (customer_id, mobile_app_ease_of_use, mobile_app_ease_of_access,mobile_app_navigation,mobile_app_likelihood_to_recommend,mobile_app_overall_rating,online_interface_ease_of_use, online_interface_ease_of_access,online_interface_navigation,online_interface_likelihood_to_recommend,online_interface_overall_rating) FROM 'C:\Users\drin\Desktop\PROJECTS\preppin-data-solutions\preppin-data-challenges\2023\Raw Files\DSB Customer Survery.csv' DELIMITER ',' CSV HEADER;
+
+CREATE TABLE year2023.wk_7_transaction_path (transaction_id VARCHAR(15),
+                                                            account_to VARCHAR(15),
+                                                                       account_from VARCHAR(15));
+
+-- \copy year2023.wk_7_transaction_path (transaction_id,account_to, account_from) FROM 'C:\Users\drin\Desktop\PROJECTS\preppin-data-solutions\preppin-data-challenges\2023\Raw Files\Transaction Path.csv' DELIMITER ',' CSV HEADER;
+
+CREATE TABLE year2023.wk_7_transaction_detail (transaction_id VARCHAR(15),
+                                                              transaction_date DATE, value DECIMAL, cancelled_or_not VARCHAR(1));
+
+-- \copy year2023.wk_7_transaction_detail (transaction_id,transaction_date,value, cancelled_or_not) FROM 'C:\Users\drin\Desktop\PROJECTS\preppin-data-solutions\preppin-data-challenges\2023\Raw Files\Transaction Detail.csv' DELIMITER ',' CSV HEADER;
+
+CREATE TABLE year2023.wk_7_account_information (account_number VARCHAR(15),
+                                                               account_type VARCHAR(15),
+                                                                            account_holder_id VARCHAR(40),
+                                                                                              balance_date DATE, balance DECIMAL);
+
+-- \copy year2023.wk_7_account_information (account_number,account_type, account_holder_id, balance_date, balance) FROM 'C:\Users\drin\Desktop\PROJECTS\preppin-data-solutions\preppin-data-challenges\2023\Raw Files\Account Information.csv' DELIMITER ',' CSV HEADER;
+
+CREATE TABLE year2023.wk_7_account_holders (account_holder_id VARCHAR(15),
+                                                              name VARCHAR(50),
+                                                                   date_of_birth DATE, contact_number VARCHAR(20),
+                                                                                                      first_line_of_address VARCHAR(50));
+
+-- \copy year2023.wk_7_account_holders (account_holder_id, name,date_of_birth,contact_number,first_line_of_address) FROM 'C:\Users\drin\Desktop\PROJECTS\preppin-data-solutions\preppin-data-challenges\2023\Raw Files\Account Holders.csv' DELIMITER ',' CSV HEADER;
