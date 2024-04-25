@@ -121,3 +121,147 @@ CREATE TABLE year2023.wk_7_account_holders (account_holder_id VARCHAR(15),
                                                                                                       first_line_of_address VARCHAR(50));
 
 -- \copy year2023.wk_7_account_holders (account_holder_id, name,date_of_birth,contact_number,first_line_of_address) FROM 'C:\Users\drin\Desktop\PROJECTS\preppin-data-solutions\preppin-data-challenges\2023\Raw Files\Account Holders.csv' DELIMITER ',' CSV HEADER;
+
+CREATE TABLE year2023.wk_8_january (id VARCHAR(10),
+                                       first_name VARCHAR(20),
+                                                  last_name VARCHAR(20),
+                                                            ticker VARCHAR(10),
+                                                                   sector VARCHAR(30),
+                                                                          market VARCHAR(10),
+                                                                                 stock_name VARCHAR(100),
+                                                                                            market_cap VARCHAR(15),
+                                                                                                       purchase_price VARCHAR(10));
+
+
+CREATE TABLE year2023.wk_8_february (id VARCHAR(10),
+                                        first_name VARCHAR(20),
+                                                   last_name VARCHAR(20),
+                                                             ticker VARCHAR(10),
+                                                                    sector VARCHAR(30),
+                                                                           market VARCHAR(10),
+                                                                                  stock_name VARCHAR(100),
+                                                                                             market_cap VARCHAR(15),
+                                                                                                        purchase_price VARCHAR(10));
+
+
+CREATE TABLE year2023.wk_8_march (id VARCHAR(10),
+                                     first_name VARCHAR(20),
+                                                last_name VARCHAR(20),
+                                                          ticker VARCHAR(10),
+                                                                 sector VARCHAR(30),
+                                                                        market VARCHAR(10),
+                                                                               stock_name VARCHAR(100),
+                                                                                          market_cap VARCHAR(15),
+                                                                                                     purchase_price VARCHAR(10));
+
+
+CREATE TABLE year2023.wk_8_april (id VARCHAR(10),
+                                     first_name VARCHAR(20),
+                                                last_name VARCHAR(20),
+                                                          ticker VARCHAR(10),
+                                                                 sector VARCHAR(30),
+                                                                        market VARCHAR(10),
+                                                                               stock_name VARCHAR(100),
+                                                                                          market_cap VARCHAR(15),
+                                                                                                     purchase_price VARCHAR(10));
+
+
+CREATE TABLE year2023.wk_8_may (id VARCHAR(10),
+                                   first_name VARCHAR(20),
+                                              last_name VARCHAR(20),
+                                                        ticker VARCHAR(10),
+                                                               sector VARCHAR(30),
+                                                                      market VARCHAR(10),
+                                                                             stock_name VARCHAR(100),
+                                                                                        market_cap VARCHAR(15),
+                                                                                                   purchase_price VARCHAR(10));
+
+
+CREATE TABLE year2023.wk_8_june (id VARCHAR(10),
+                                    first_name VARCHAR(20),
+                                               last_name VARCHAR(20),
+                                                         ticker VARCHAR(10),
+                                                                sector VARCHAR(30),
+                                                                       market VARCHAR(10),
+                                                                              stock_name VARCHAR(100),
+                                                                                         market_cap VARCHAR(15),
+                                                                                                    purchase_price VARCHAR(10));
+
+
+CREATE TABLE year2023.wk_8_july (id VARCHAR(10),
+                                    first_name VARCHAR(20),
+                                               last_name VARCHAR(20),
+                                                         ticker VARCHAR(10),
+                                                                sector VARCHAR(30),
+                                                                       market VARCHAR(10),
+                                                                              stock_name VARCHAR(100),
+                                                                                         market_cap VARCHAR(15),
+                                                                                                    purchase_price VARCHAR(10));
+
+
+CREATE TABLE year2023.wk_8_august (id VARCHAR(10),
+                                      first_name VARCHAR(20),
+                                                 last_name VARCHAR(20),
+                                                           ticker VARCHAR(10),
+                                                                  sector VARCHAR(30),
+                                                                         market VARCHAR(10),
+                                                                                stock_name VARCHAR(100),
+                                                                                           market_cap VARCHAR(15),
+                                                                                                      purchase_price VARCHAR(10));
+
+
+CREATE TABLE year2023.wk_8_september(id VARCHAR(10),
+                                        first_name VARCHAR(20),
+                                                   last_name VARCHAR(20),
+                                                             ticker VARCHAR(10),
+                                                                    sector VARCHAR(30),
+                                                                           market VARCHAR(10),
+                                                                                  stock_name VARCHAR(100),
+                                                                                             market_cap VARCHAR(15),
+                                                                                                        purchase_price VARCHAR(10));
+
+
+CREATE TABLE year2023.wk_8_october (id VARCHAR(10),
+                                       first_name VARCHAR(20),
+                                                  last_name VARCHAR(20),
+                                                            ticker VARCHAR(10),
+                                                                   sector VARCHAR(30),
+                                                                          market VARCHAR(10),
+                                                                                 stock_name VARCHAR(100),
+                                                                                            market_cap VARCHAR(15),
+                                                                                                       purchase_price VARCHAR(10));
+
+
+CREATE TABLE year2023.wk_8_november (id VARCHAR(10),
+                                        first_name VARCHAR(20),
+                                                   last_name VARCHAR(20),
+                                                             ticker VARCHAR(10),
+                                                                    sector VARCHAR(30),
+                                                                           market VARCHAR(10),
+                                                                                  stock_name VARCHAR(100),
+                                                                                             market_cap VARCHAR(15),
+                                                                                                        purchase_price VARCHAR(10));
+
+
+CREATE TABLE year2023.wk_8_december (id VARCHAR(10),
+                                        first_name VARCHAR(20),
+                                                   last_name VARCHAR(20),
+                                                             ticker VARCHAR(10),
+                                                                    sector VARCHAR(30),
+                                                                           market VARCHAR(10),
+                                                                                  stock_name VARCHAR(100),
+                                                                                             market_cap VARCHAR(15),
+                                                                                                        purchase_price VARCHAR(10));
+
+-- \copy year2023.wk_8_january  (id, first_name, last_name, ticker, sector, market, stock_name, market_cap, purchase_price) FROM 'C:\Users\drin\Desktop\PROJECTS\preppin-data-solutions\preppin-data-challenges\2023\Raw Files\MOCK_DATA.csv' DELIMITER ',' CSV HEADER;
+-- \copy year2023.wk_8_february (id, first_name, last_name, ticker, sector, market, stock_name, market_cap, purchase_price) FROM 'C:\Users\drin\Desktop\PROJECTS\preppin-data-solutions\preppin-data-challenges\2023\Raw Files\MOCK_DATA-2.csv' DELIMITER ',' CSV HEADER;
+-- \copy year2023.wk_8_march    (id, first_name, last_name, ticker, sector, market, stock_name, market_cap, purchase_price) FROM 'C:\Users\drin\Desktop\PROJECTS\preppin-data-solutions\preppin-data-challenges\2023\Raw Files\MOCK_DATA-3.csv' DELIMITER ',' CSV HEADER;
+-- \copy year2023.wk_8_april    (id, first_name, last_name, ticker, sector, market, stock_name, market_cap, purchase_price) FROM 'C:\Users\drin\Desktop\PROJECTS\preppin-data-solutions\preppin-data-challenges\2023\Raw Files\MOCK_DATA-4.csv' DELIMITER ',' CSV HEADER;
+-- \copy year2023.wk_8_may      (id, first_name, last_name, ticker, sector, market, stock_name, market_cap, purchase_price) FROM 'C:\Users\drin\Desktop\PROJECTS\preppin-data-solutions\preppin-data-challenges\2023\Raw Files\MOCK_DATA-5.csv' DELIMITER ',' CSV HEADER;
+-- \copy year2023.wk_8_june     (id, first_name, last_name, ticker, sector, market, stock_name, market_cap, purchase_price) FROM 'C:\Users\drin\Desktop\PROJECTS\preppin-data-solutions\preppin-data-challenges\2023\Raw Files\MOCK_DATA-6.csv' DELIMITER ',' CSV HEADER;
+-- \copy year2023.wk_8_july     (id, first_name, last_name, ticker, sector, market, stock_name, market_cap, purchase_price) FROM 'C:\Users\drin\Desktop\PROJECTS\preppin-data-solutions\preppin-data-challenges\2023\Raw Files\MOCK_DATA-7.csv' DELIMITER ',' CSV HEADER;
+-- \copy year2023.wk_8_august   (id, first_name, last_name, ticker, sector, market, stock_name, market_cap, purchase_price) FROM 'C:\Users\drin\Desktop\PROJECTS\preppin-data-solutions\preppin-data-challenges\2023\Raw Files\MOCK_DATA-8.csv' DELIMITER ',' CSV HEADER;
+-- \copy year2023.wk_8_september(id, first_name, last_name, ticker, sector, market, stock_name, market_cap, purchase_price) FROM 'C:\Users\drin\Desktop\PROJECTS\preppin-data-solutions\preppin-data-challenges\2023\Raw Files\MOCK_DATA-9.csv' DELIMITER ',' CSV HEADER;
+-- \copy year2023.wk_8_october  (id, first_name, last_name, ticker, sector, market, stock_name, market_cap, purchase_price) FROM 'C:\Users\drin\Desktop\PROJECTS\preppin-data-solutions\preppin-data-challenges\2023\Raw Files\MOCK_DATA-10.csv' DELIMITER ',' CSV HEADER;
+-- \copy year2023.wk_8_november (id, first_name, last_name, ticker, sector, market, stock_name, market_cap, purchase_price) FROM 'C:\Users\drin\Desktop\PROJECTS\preppin-data-solutions\preppin-data-challenges\2023\Raw Files\MOCK_DATA-11.csv' DELIMITER ',' CSV HEADER;
+-- \copy year2023.wk_8_december (id, first_name, last_name, ticker, sector, market, stock_name, market_cap, purchase_price) FROM 'C:\Users\drin\Desktop\PROJECTS\preppin-data-solutions\preppin-data-challenges\2023\Raw Files\MOCK_DATA-12.csv' DELIMITER ',' CSV HEADER;
