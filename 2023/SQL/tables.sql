@@ -270,3 +270,6 @@ CREATE TABLE year2023.wk_8_december (id VARCHAR(10),
 CREATE TABLE year2023.wk_11_branch_locations (branch VARCHAR(20), branch_long DECIMAL, branch_lat DECIMAL);
 CREATE TABLE year2023.wk_11_customer_locations (customer VARCHAR(20), address_long DECIMAL, address_lat DECIMAL);
 
+-- \copy year2023.wk_11_branch_locations(branch, branch_long, branch_lat) FROM 'C:\Users\drin\Desktop\PROJECTS\preppin-data-solutions\preppin-data-challenges\2023\Raw Files\DSB Branches.csv' DELIMITER ',' CSV HEADER;
+-- \copy year2023.wk_11_customer_locations(customer, address_long, address_lat) FROM 'C:\Users\drin\Desktop\PROJECTS\preppin-data-solutions\preppin-data-challenges\2023\Raw Files\DSB Customer Locations.csv' DELIMITER ',' CSV HEADER;
+
