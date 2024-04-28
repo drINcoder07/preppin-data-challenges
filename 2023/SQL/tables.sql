@@ -265,3 +265,8 @@ CREATE TABLE year2023.wk_8_december (id VARCHAR(10),
 -- \copy year2023.wk_8_october  (id, first_name, last_name, ticker, sector, market, stock_name, market_cap, purchase_price) FROM 'C:\Users\drin\Desktop\PROJECTS\preppin-data-solutions\preppin-data-challenges\2023\Raw Files\MOCK_DATA-10.csv' DELIMITER ',' CSV HEADER;
 -- \copy year2023.wk_8_november (id, first_name, last_name, ticker, sector, market, stock_name, market_cap, purchase_price) FROM 'C:\Users\drin\Desktop\PROJECTS\preppin-data-solutions\preppin-data-challenges\2023\Raw Files\MOCK_DATA-11.csv' DELIMITER ',' CSV HEADER;
 -- \copy year2023.wk_8_december (id, first_name, last_name, ticker, sector, market, stock_name, market_cap, purchase_price) FROM 'C:\Users\drin\Desktop\PROJECTS\preppin-data-solutions\preppin-data-challenges\2023\Raw Files\MOCK_DATA-12.csv' DELIMITER ',' CSV HEADER;
+
+
+CREATE TABLE year2023.wk_11_branch_locations (branch VARCHAR(20), branch_long DECIMAL, branch_lat DECIMAL);
+CREATE TABLE year2023.wk_11_customer_locations (customer VARCHAR(20), address_long DECIMAL, address_lat DECIMAL);
+
