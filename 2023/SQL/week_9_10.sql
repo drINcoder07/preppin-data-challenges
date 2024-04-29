@@ -66,3 +66,8 @@ LEFT JOIN incoming_transactions i ON a.account_number = i.account_to AND a.balan
 LEFT JOIN outgoing_transactions o ON a.account_number = o.account_from AND a.balance_date = o.transaction_date AND  a.balance = o.value)
 SELECT account_number, balance_date, transaction_value, SUM(combined_values) OVER (PARTITION BY account_number ORDER BY balance_date, abs_values DESC) AS balance
 FROM merged_values;
+
+
+SELECT *
+FROM balance_transactions
+WHERE balance_date = '2023-02-01'
