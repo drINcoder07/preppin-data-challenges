@@ -45,13 +45,12 @@ SELECT p.account_to, d.transaction_date, d.value
 FROM year2023.wk_7_transaction_path p LEFT JOIN transaction_detail d ON p.transaction_id = d.transaction_id
 LEFT JOIN account_information a ON p.account_to = a.account_number;
 
-DROP VIEW outgoing_transactions;
-
 CREATE TEMPORARY VIEW outgoing_transactions AS
 SELECT p.account_from, d.transaction_date, -(d.value) AS value
 FROM year2023.wk_7_transaction_path p LEFT JOIN transaction_detail d ON p.transaction_id = d.transaction_id
 LEFT JOIN account_information a ON p.account_from = a.account_number;
 
+CREATE TEMPORARY VIEW balance_transactions AS
 WITH combined_tables AS
 (SELECT * FROM account_information
 UNION ALL
