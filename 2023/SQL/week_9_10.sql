@@ -102,6 +102,8 @@ SELECT account_number,
                                            abs_values DESC) AS balance
 FROM merged_values;
 
+SELECT * FROM balance_transactions;
+
 -- 2023: Week 10 - What's my balance on this day?
  -- AS OF FEBRUARY 1, 2023
 WITH filtered_transactions AS 
@@ -110,7 +112,7 @@ WITH filtered_transactions AS
           transaction_value, 
           balance, 
           ROW_NUMBER() OVER(PARTITION BY account_number
-                            ORDER BY balance_date DESC) AS ranking
+                            ORDER BY balance_date DESC, ABS(balance)) AS ranking
    FROM balance_transactions 
    WHERE balance_date <= '2023-02-01')
 SELECT account_number,
