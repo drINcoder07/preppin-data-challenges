@@ -273,3 +273,25 @@ CREATE TABLE year2023.wk_11_customer_locations (customer VARCHAR(20), address_lo
 -- \copy year2023.wk_11_branch_locations(branch, branch_long, branch_lat) FROM 'C:\Users\drin\Desktop\PROJECTS\preppin-data-solutions\preppin-data-challenges\2023\Raw Files\DSB Branches.csv' DELIMITER ',' CSV HEADER;
 -- \copy year2023.wk_11_customer_locations(customer, address_long, address_lat) FROM 'C:\Users\drin\Desktop\PROJECTS\preppin-data-solutions\preppin-data-challenges\2023\Raw Files\DSB Customer Locations.csv' DELIMITER ',' CSV HEADER;
 
+
+CREATE TABLE year2023.wk_12_roi_new_customers (
+       reporting_month VARCHAR(15),
+       reporting_day INTEGER,
+       new_customers INTEGER,
+       reporting_date DATE
+);
+
+CREATE TABLE year2023.wk_12_uk_bank_holidays (
+       year INTEGER,
+       date VARCHAR(15),
+       bank_holiday VARCHAR(70)
+);
+
+CREATE TABLE year2023.wk_12_new_customers (
+       date DATE,
+       new_customers INTEGER
+);
+
+-- \copy year2023.wk_12_new_customers(date, new_customers) FROM 'C:\Users\drin\Desktop\PROJECTS\preppin-data-solutions\preppin-data-challenges\2023\Raw Files\New Customer Reporting.xlsx - New Customers.csv' DELIMITER ',' CSV HEADER;
+-- \copy year2023.wk_12_uk_bank_holidays(year, date, bank_holiday) FROM 'C:\Users\drin\Desktop\PROJECTS\preppin-data-solutions\preppin-data-challenges\2023\Raw Files\New Customer Reporting.xlsx - UK Bank Holidays.csv' DELIMITER ',' CSV HEADER;
+-- \copy year2023.wk_12_roi_new_customers(reporting_month, reporting_day, new_customers, reporting_date) FROM 'C:\Users\drin\Desktop\PROJECTS\preppin-data-solutions\preppin-data-challenges\2023\Raw Files\New Customer Reporting.xlsx - ROI New Customers.csv' DELIMITER ',' CSV HEADER;
