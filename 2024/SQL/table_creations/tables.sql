@@ -1,4 +1,5 @@
-CREATE SCHEMA year2024
+CREATE SCHEMA year2024;
+
 CREATE TABLE wk_1 (flight_details VARCHAR(100),
 																				flow_card SMALLINT, bags_checked SMALLINT, meal_type VARCHAR(50));
 
