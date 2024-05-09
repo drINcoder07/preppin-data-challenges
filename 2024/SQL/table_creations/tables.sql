@@ -151,3 +151,16 @@ CREATE TABLE year2024.wk_10_product (product_type VARCHAR(10),
 																																						pack_size VARCHAR(5),
 																																						product_size VARCHAR(5),
 																																						unit_cost DECIMAL, selling_price DECIMAL); -- \copy year2024.wk_10_product(product_type, product_scent, pack_size, product_size, unit_cost, selling_price) FROM 'C:\Users\drin\Desktop\PROJECTS\preppin-data-solutions\preppin-data-challenges\2024\Raw Files\2024W10 Input.xlsx - Product Table.csv' DELIMITER ',' CSV HEADER;
+
+
+CREATE TABLE year2024.wk_13_2020 (sales_date DATE, product VARCHAR(50), price DECIMAL, quantity_sold INTEGER);
+CREATE TABLE year2024.wk_13_2021 (sales_date DATE, product VARCHAR(50), price DECIMAL, quantity_sold INTEGER);
+CREATE TABLE year2024.wk_13_2022 (sales_date DATE, product VARCHAR(50), price DECIMAL, quantity_sold INTEGER);
+CREATE TABLE year2024.wk_13_2023 (sales_date DATE, product VARCHAR(50), price DECIMAL, quantity_sold INTEGER);
+CREATE TABLE year2024.wk_13_2024 (sales_date DATE, product VARCHAR(50), price DECIMAL, quantity_sold INTEGER);
+
+-- \copy year2024.wk_13_2020 (sales_date, product, price, quantity_sold) FROM '2024\Raw Files\Easter products Input.xlsx - 2020.csv' DELIMITER ',' CSV HEADER;
+-- \copy year2024.wk_13_2021 (sales_date, product, price, quantity_sold) FROM '2024\Raw Files\Easter products Input.xlsx - 2021.csv' DELIMITER ',' CSV HEADER;
+-- \copy year2024.wk_13_2022 (sales_date, product, price, quantity_sold) FROM '2024\Raw Files\Easter products Input.xlsx - 2022.csv' DELIMITER ',' CSV HEADER;
+-- \copy year2024.wk_13_2023 (sales_date, product, price, quantity_sold) FROM '2024\Raw Files\Easter products Input.xlsx - 2023.csv' DELIMITER ',' CSV HEADER;
+-- \copy year2024.wk_13_2024 (sales_date, product, price, quantity_sold) FROM '2024\Raw Files\Easter products Input.xlsx - 2024.csv' DELIMITER ',' CSV HEADER;
