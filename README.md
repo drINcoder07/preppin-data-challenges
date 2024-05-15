@@ -21,6 +21,8 @@ I solve [Preppin-Data Challenges](https://preppindata.blogspot.com/) using progr
 | [Week 12](https://preppindata.blogspot.com/2024/03/2024-week-12-graduate-student-loan.html) | [Solution]()
 | [Week 13](https://preppindata.blogspot.com/2024/03/2024-week-13-easter-sales.html) | [Solution](https://github.com/drINcoder07/preppin-data-challenges/blob/main/2024/SQL/week_13.sql) |
 | [Week 14](https://preppindata.blogspot.com/2024/04/2024-week-14-store-data.html) | [Solution](https://github.com/drINcoder07/preppin-data-challenges/blob/main/2024/SQL/week_14.sql) |
+| [Week 15](https://preppindata.blogspot.com/2024/04/2024-week-15-store-data-part-2.html) | [Solution](https://github.com/drINcoder07/preppin-data-challenges/blob/main/2024/SQL/week_15.sql) |
+| [Week 16](https://preppindata.blogspot.com/2024/04/2024-week-16-budget-vs-actuals.html) | [Solution](https://github.com/drINcoder07/preppin-data-challenges/blob/main/2024/SQL/week_16.sql) |
  
 
 ### YEAR 2023
