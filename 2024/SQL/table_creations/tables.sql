@@ -182,9 +182,19 @@ CREATE TABLE year2024.wk_14_stock_per_store (
 	quantity INTEGER
 );
 
-DROP TABLE year2024.wk_14_stock_per_store;
-
 -- \copy year2024.wk_14_recalled_items (category, product_id, unit_price) FROM '2024\Raw Files\Store Stock Beginner Data.xlsx - Recalled Items.csv' DELIMITER ',' CSV HEADER;
 -- \copy year2024.wk_14_stock_per_store (city, store, store_id, category, product_id, unit_price, quantity) FROM '2024\Raw Files\Store Stock Beginner Data.xlsx - Stock per Store.csv' DELIMITER ',' CSV HEADER;
 
+CREATE TABLE year2024.wk_15_advanced_stock_per_store (
+	city VARCHAR(20),
+	store VARCHAR(20),
+	store_id INTEGER,
+	category VARCHAR(15),
+	product_id VARCHAR(10),
+	unit_price DECIMAL,
+	quantity INTEGER,
+	date DATE
+);
+
+-- \copy year2024.wk_15_advanced_stock_per_store (city, store, store_id, category, product_id, unit_price, quantity, date) FROM '2024\Raw Files\Store Stock Data Advanced.xlsx - Adanced Stock per Store Data.csv' DELIMITER ',' CSV HEADER;
 
