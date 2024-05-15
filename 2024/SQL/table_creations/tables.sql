@@ -198,3 +198,16 @@ CREATE TABLE year2024.wk_15_advanced_stock_per_store (
 
 -- \copy year2024.wk_15_advanced_stock_per_store (city, store, store_id, category, product_id, unit_price, quantity, date) FROM '2024\Raw Files\Store Stock Data Advanced.xlsx - Adanced Stock per Store Data.csv' DELIMITER ',' CSV HEADER;
 
+CREATE TABLE year2024.wk_16_budget (
+	category VARCHAR(30),
+	budget VARCHAR(20),
+	notes VARCHAR(50)
+);
+
+CREATE TABLE year2024.wk_16_actual (
+	category VARCHAR(30),
+	actual VARCHAR(20)
+);
+
+-- \copy year2024.wk_16_budget (category, budget, notes) 	FROM '2024\Raw Files\Budget Data 2022 (Beginner).xlsx - Budget.csv' DELIMITER ',' CSV HEADER;
+-- \copy year2024.wk_16_actual (category, actual) 			FROM '2024\Raw Files\Budget Data 2022 (Beginner).xlsx - Actual.csv' DELIMITER ',' CSV HEADER;
